@@ -1,25 +1,41 @@
 # Sets
-Sets are in your life every day. When ever you have a list of items that all pertain to something you are using a set.
+A set is a useful tool when we want to compile a list of unique data. The way items are checked and inputed is done in a very efficient way.
 
-A set allows us to store multiple values in a single variable. Items in a set are, unordered, unchangeable, and allow no duplicates.
+When you add an item to a set it is hashed into a number and that is where the item is placed. This is because when the same item is added it is inserted into the same spot thus eliminating any duplicates.
 
-## Example: Names in a Pool
-You are making a program to deliver you resume. When listing the languages you know you put them into a set, because you don't want any double entries and order does not matter.
+The basic methods of a set is:
+- add() - Insert an item into a set
+- remove() - Remove the given item if present.
+- intersection(set) - returns all items that are in both sets
 
-The program can look like this:
+
+
+## Example: Remove doubles.
 ```python
-s = set("Java", "C++", "Python")
+ids = [1, 2, 3, 4, 7, 9, 3, 6, 2, 0, 5]
 
-print(s)
+set = set()
+for id in ids:
+	set.add(id) # Add each id to the set.
+
+for item in set:
+	print(item)
 ```
-The Output:
+Output:
 ```
-{'Java','C++','Python'}
+0
+1
+2
+3
+4
+5
+6
+7
+9
 ```
-
-## You Try: Cards in a players hand
-We already have the deck sorted out from the previous tutorial, now we need to handle each players hand.
-
-In a game of cards each player will have a hand consisting of any number of cards, of which the order does not matter because they can see them all. Using sets write code to handle each players hand.
-
-Click here for the [Solution](2-answer.md).
+## You Try: Different search
+Write code to remove all double ids using a set.
+```python
+def removeDoubles(itemArray):
+	pass
+```

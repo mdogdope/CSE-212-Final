@@ -3,6 +3,8 @@ Writing software would be very difficult if we could not give our data some kind
 
 A queue can be seen like a line at an amusement park. The order is dictated by when each item enters the queue. When it is time to remove someone from the queue we pick the item at the front of the line. Keeping with our analogy, when someone enters a line at a ride they start at the back, and as each person rides the ride, removing them from the queue, you move forward in the queue.
 
+Queues tend to have a big O of O(n). This can be done faster with the use of a linked list which is O(1).
+
 In python a queue can be created using a list:
 ```python
 queue = [] # Create the queue.
