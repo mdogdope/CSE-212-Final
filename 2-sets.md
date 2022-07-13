@@ -36,6 +36,7 @@ Output:
 ## You Try: Different search
 Write code to remove all double ids using a set.
 ```python
+ids = [1, 2, 3, 4, 7, 9, 3, 6, 2, 0, 5]
 def removeDoubles(itemArray):
 	pass
 ```
